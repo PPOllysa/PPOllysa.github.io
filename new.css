@@ -71,11 +71,11 @@
   }
   .flex{
     display: flex;
-    gap: 60px;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
   }
-  .tiyan{
-    display: inline;
-  }
+  
   .step-img-box::after {
     width:60%;
     padding-bottom: 60%;
