@@ -48,7 +48,7 @@
           </li>
           <li class="nav__item">
             <a class="nav__link nav__link--btn btn--show-modal" href="#"
-              >联系我们</a
+              >体验院友帮</a
             >
           </li>
         </ul>
@@ -63,7 +63,11 @@
           Social <span class="highlight">contact</span>
         </h1>
         <h4>专属于武大新传人的院内社交小程序，资讯整合、院友互助、同窗叙旧、追忆韶华的院友之家。</h4>
-        <button class="btn--text btn--scroll-to">了解更多 &DownArrow;</button>
+        <div class="flex">
+          <div class="btn--text keyword btn--show-modal">体验院友帮</div>
+          <a class="btn--text tiyan" href="https://modao.cc/app/XXDdl5Lbrm3bg1z3RVLYtV #院友帮-分享  " target="_blank" >院友帮原型界面</a>
+        <button class="btn--text btn--scroll-to tiyan">了解更多 &DownArrow;</button>
+      </div>
         <div class="header1"> <img
           src="https://s1.ax1x.com/2022/12/27/zzRPER.png"
           class="header__img"
@@ -285,7 +289,7 @@
                 <address class="testimonial__author">
                   <img src="https://s1.ax1x.com/2022/12/27/zzRUbj.jpg" alt="" class="testimonial__photo" />
                   <h6 class="testimonial__name">邓白露</h6>
-                  <p class="testimonial__location">20级网络传播学</p>
+                  <p class="testimonial__location">20级传播学</p>
                 </address>
               </div>
             </div>
@@ -302,7 +306,7 @@
                 <address class="testimonial__author">
                   <img src="https://s1.ax1x.com/2022/12/27/zzRdVs.jpg" alt="" class="testimonial__photo" />
                   <h6 class="testimonial__name">刘雅诗</h6>
-                  <p class="testimonial__location">20级网络传播学</p>
+                  <p class="testimonial__location">20级传播学</p>
                 </address>
               </div>
             </div>
@@ -319,7 +323,7 @@
                 <address class="testimonial__author">
                   <img src="https://s1.ax1x.com/2022/12/20/zLWlRJ.jpg" alt="" class="testimonial__photo" />
                   <h6 class="testimonial__name">张思蓉</h6>
-                  <p class="testimonial__location">20级网络传播学</p>
+                  <p class="testimonial__location">20级传播学</p>
                 </address>
               </div>
             </div>
@@ -337,7 +341,7 @@
           如果您有任何疑问、难题或者建议，请毫不犹豫地联系我们。我们很乐意听到您的意见。
         </h3>
       </div>
-      <button class="btn btn--show-modal">联系我们</button>
+      <button class="btn show">联系我们</button>
     </section>
 
     <footer class="footer">
@@ -370,24 +374,35 @@
 
     <div class="modal hidden">
       <button class="btn--close-modal">&times;</button>
-      <h2 class="modal__header">
+    
+      <h2 class="modal__header">请扫描以下二维码<br>
+        诚邀您体验
+         <span class="highlight">院友帮</span>   
+      </h2>
+      <img class="tupian" src="https://s1.ax1x.com/2022/12/28/zzIsR1.jpg"></img>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <div class="mianban hidden">
+      <button class="closer">&times;</button>
+        <h2 class="modal__header">
         希望听到您的声音<br />
         请通过填写以下表单 <span class="highlight">联系我们</span>
       </h2>
       <form class="modal__form">
-        <label>姓名</label>
+        <label>姓名:</label>
         <input type="text" />
        
-        <label>邮件地址</label>
+        <label>邮件地址:</label>
         <input type="email" /> 
         <label>内容:</label>
         <input type="text" />
         <button class="btn">提交</button>
       </form>
-    </div>
-    <div class="overlay hidden"></div>
+    
+
+   
 
     <!-- <script src="script.js"></script> -->
   </body>
 </html>
-
