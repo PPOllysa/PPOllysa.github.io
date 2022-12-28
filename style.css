@@ -58,7 +58,7 @@ body {
   text-transform: uppercase;
   color: var(--color-primary);
   margin-bottom: 1rem;
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
 .section__header {
@@ -140,7 +140,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8rem;
+  height: 9rem;
   width: 100%;
   padding: 0 6rem;
   z-index: 100;
@@ -575,7 +575,7 @@ h4 {
 
 .testimonial__photo {
   grid-row: 1 / span 2;
-  width: 6.5rem;
+  width: 8.0rem;
   border-radius: 50%;
 }
 
@@ -637,7 +637,9 @@ h4 {
   justify-content: center;
   margin-bottom: 5rem;
 }
-
+.tiyan{
+  text-decoration: none;
+}
 .footer__item {
   margin-right: 4rem;
 }
@@ -666,7 +668,7 @@ h4 {
 }
 
 /* MODAL WINDOW */
-.modal {
+.modal,.mianban {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -678,8 +680,10 @@ h4 {
   z-index: 1000;
   transition: all 0.5s;
 }
-
-.overlay {
+.keyword{
+  font-weight: 700;
+}
+.overlay,.overlayr {
   position: fixed;
   top: 0;
   left: 0;
@@ -690,7 +694,14 @@ h4 {
   z-index: 100;
   transition: all 0.5s;
 }
-
+.overlayr{
+  z-index: 55;
+}
+.tupian{
+  width:60%;
+  display: block;
+  margin: auto;
+}
 .modal__header {
   font-size: 3.25rem;
   margin-bottom: 4.5rem;
@@ -723,7 +734,7 @@ h4 {
   margin-top: 1rem;
 }
 
-.btn--close-modal {
+.btn--close-modal,.closer {
   font-family: inherit;
   color: inherit;
   position: absolute;
