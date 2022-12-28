@@ -1,9 +1,14 @@
 'use strict';
 
 const modal = document.querySelector('.modal');
+const mianban = document.querySelector('.mianban');
 const overlay = document.querySelector('.overlay');
+const overlayr = document.querySelector('.overlayr');
 const btnCloseModal = document.querySelector('.btn--close-modal');
+const close = document.querySelector('.closer');
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
+const show = document.querySelectorAll('.show');
+
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 const section1 = document.querySelector('#section--1');
 const nav = document.querySelector('.nav');
@@ -19,15 +24,23 @@ const openModal = function (e) {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 };
-
+const openModal2 = function (e) {
+  e.preventDefault();
+  mianban.classList.remove('hidden');
+  overlayr.classList.remove('hidden');
+};
 const closeModal = function () {
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
 };
-
+const closeModal2 = function () {
+  mianban.classList.add('hidden');
+  overlayr.classList.add('hidden');
+};
 btnsOpenModal.forEach(btn => btn.addEventListener('click', openModal));
-
+show.forEach(btn => btn.addEventListener('click', openModal2));
 btnCloseModal.addEventListener('click', closeModal);
+close.addEventListener('click', closeModal2);
 overlay.addEventListener('click', closeModal);
 
 document.addEventListener('keydown', function (e) {
