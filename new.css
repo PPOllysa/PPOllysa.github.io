@@ -61,7 +61,21 @@
     background-color: #b3dcdc;
     z-index: -2;
   }
-  
+  .er{
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+  .tiyan{
+    color: #008a8a;
+  }
+  .flex{
+    display: flex;
+    gap: 50px;
+  }
+  .tiyan{
+    display: inline;
+  }
   .step-img-box::after {
     width:60%;
     padding-bottom: 60%;
